@@ -55,3 +55,6 @@ print(chr(binary), chr(octal), chr(hexadeciaml), chr(binary))      #ASCII code�
 # chr : ASCII -> 문자     ord : 문자 -> ASCII
 print(ord("B"), ord('Z'), ord('a'), ord('2'))   #66, 90, 97, 50
 
+# (100°F − 32) × 5/9 = 37.778°C
+fahrenheit = float(input("Input Fahrenheit : "))
+print(f'Fahrenheit : {fahrenheit}F, Celsius : {((fahrenheit-32)*5/9):.2f}C')
