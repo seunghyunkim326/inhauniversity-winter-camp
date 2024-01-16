@@ -26,3 +26,5 @@ else :
         print(f'{number} is prime number')
     else :
         print(f'{number} is NOT prime number!')
+# assignment : 더 보완할 것을 찾는 것
+# sequence type : 순서를 가지는 값들        for in 구문에서 sequence type 사용가능
