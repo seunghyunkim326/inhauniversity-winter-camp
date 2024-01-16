@@ -1,15 +1,22 @@
-subjects = "pythoncdatabaselinux"
-print(subjects.isalnum())
-subject = input("수강긴청과목 입력 : ")
-try :
-    print(f'해당 과목이 존재합니다. 위치는 {subjects.index(subject)}번 인덱스입니다.')
-except ValueError :
-    print('해당 과목이 존재하지 않습니다.')
-#count 함수 -> 갯수 세는 옵션
-# is가 붙는 애들은 True, False (Boolean값) 배출
-# 대소문자 관련 함수들
-# 배열, 포맷팅
-print('%e' %0.7045)
-# 포맷팅 지정 시 기본값(+)은 오른쪽정렬
-# %s %f %d {}   {}.format(thing)        'The {1} is in the {0}.'.format(thing, place)   번호 지정가능 없으면 차례대로
-# dic 사용 가능
+subjects = {'python' : 'kim', 'c++' : 'sung', 'data structure' : 'kim', 'database' : 'kang'}
+print("{0[python]} {0[data structure]}".format(subjects))
+# break 가장 가까운 반복문 탈출
+# continue 아래 내용 무시하고 가까운 반복문 다시 돌림
+# 소수 판별기 만들어보기
+# number = int(input())
+# count = 0
+# for _ in range(number) :
+#     \
+
+
+number = int(input("Input number : "))
+cnt = 0
+i = 1
+while i <= number:
+    if number % i == 0 :
+        cnt += 1
+    i += 1
+if cnt == 2:
+    print(f'{number} is prime number')
+else :
+    print(f'{number} is NOT prime number!')
