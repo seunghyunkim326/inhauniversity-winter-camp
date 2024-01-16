@@ -1,4 +1,10 @@
-L = []
-for i in range(3, -1, -1):
-    L += [i]        # If you want to input an index in the list just use +
-print(L)
+guess_me = 7
+number = 1
+while number <= guess_me+1:
+    if number < guess_me:
+        print('too low')
+    elif number == guess_me:
+        print('found it!')
+    elif number > guess_me:
+        print('oops')
+    number += 1
