@@ -1,30 +1,13 @@
-# subjects = {'python' : 'kim', 'c++' : 'sung', 'data structure' : 'kim', 'database' : 'kang'}
-# print("{0[python]} {0[data structure]}".format(subjects))
-# break 가장 가까운 반복문 탈출
-# continue 아래 내용 무시하고 가까운 반복문 다시 돌림
-# 소수 판별기 만들어보기
-# number = int(input())
-# count = 0
-# for _ in range(number) :
-#     \
+univ = "inha"
+i = 0
+while i < len(univ):
+    print(univ[i], end=' ')
+    i += 1
+print()
+for letter in univ:
+    print(letter, end=' ')
+print()
 
-
-number = int(input("Input number : "))
-is_prime = True # int -> bool
-i = 2
-if number < 2 :
-    print(f'{number} is NOT prime number!')
-else :
-    while i < number:
-        if number % i == 0 :
-            is_prime = False    # remove +
-            break       # break를 통해서 시간, 불필요 계산을 줄일 수 있음
-            #print(i, end=' ')
-        i += 1
-    # if cnt == 0 :
-    if is_prime:    # remove ==
-        print(f'{number} is prime number')
-    else :
-        print(f'{number} is NOT prime number!')
-# assignment : 더 보완할 것을 찾는 것
-# sequence type : 순서를 가지는 값들        for in 구문에서 sequence type 사용가능
+# for k in range(0, len(univ), 1) :
+for k in range(len(univ)):
+    print(univ[k], end=' ')
