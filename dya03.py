@@ -1,14 +1,15 @@
-university = "Inha\nUniversity!"
-# print(university)
-# univ = r"Inha\nUniversity!"
-# print(univ)     #raw string
-# number1 = input("First number : ")
-# number2 = input("Second number : ")
+# numbers = input("FirstNumber SecondNumber : ").split()
+# print(int(numbers[0]) + int(numbers[1]))    #arithmetic operation
+# print(numbers[0] + numbers[1])    #concatenation
 
-# slicing and .replace()    문자열 offset(번호가 있는 좌석이라고 생각)
-# substring start to end-1 [a:b:c] -> a부터c까지 b만큼 건너뛰면서
-print(university[:4])
-print(university[:-11])
-print(university[0:len(university)])
-print(university[:16])
-print(university[::2])
+# course = "2024 KEB Bootcamp"
+# print(course)
+# # list_course = course.split()    #split(input standard for split) default value => ' '   문자열을 list로
+# list_course = course.split('B')
+# print(list_course)
+
+# join() => list를 문자열로
+
+subjects = ["python" , "c++" , "database"]
+subjects_string = "".join(subjects)
+print(subjects_string)
