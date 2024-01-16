@@ -28,9 +28,10 @@ while True:
         n2 = int(numbers[1])
         if n1 > n2:
             n1, n2 = n2, n1
+
         for j in range(n1, n2+1):
             decision2 = True
-            if n1 < 2:
+            if j < 2:
                 pass
             else:
                 for k in range(2, j):
