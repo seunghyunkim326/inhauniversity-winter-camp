@@ -12,14 +12,17 @@
 number = int(input("Input number : "))
 is_prime = True # int -> bool
 i = 2
-while i < number:
-    if number % i == 0 :
-        is_prime = False    # remove +
-        break       # break를 통해서 시간, 불필요 계산을 줄일 수 있음
-        #print(i, end=' ')
-    i += 1
-# if cnt == 0 :
-if is_prime:    # remove ==
-    print(f'{number} is prime number')
-else :
+if number < 2 :
     print(f'{number} is NOT prime number!')
+else :
+    while i < number:
+        if number % i == 0 :
+            is_prime = False    # remove +
+            break       # break를 통해서 시간, 불필요 계산을 줄일 수 있음
+            #print(i, end=' ')
+        i += 1
+    # if cnt == 0 :
+    if is_prime:    # remove ==
+        print(f'{number} is prime number')
+    else :
+        print(f'{number} is NOT prime number!')
