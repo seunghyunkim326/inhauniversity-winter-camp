@@ -1,20 +1,10 @@
-# prime number
-def isprime(n):
-    if n < 2:
-        return False
-    else:
-        i = 2
-        while i**2 <= n:
-            if n % i == 0:
-                return False
-            i += 1
-        return True
+# 9.16 연습문제 1)
+# ['Harry', 'Ron', 'Hermione']를 반환하는 good()함수
+A = ['Harry', 'Ron', 'Hermione']
+def good():
+    print(A)
+good()
 
-n1, n2 = map(int, input("Input first second number : ").split())
-
-if n1 > n2:
-    n1, n2 = n2, n1
-
-for number in range(n1, n2+1):
-    if isprime(number):
-        print(number, end=' ')
+def good2():
+    print(['Harry', 'Ron', 'Hermione'])
+good2()
