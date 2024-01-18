@@ -1,3 +1,9 @@
-n1, n2 = map(int, input("Input first second number : ").split())
-n1, n2 = min(n1, n2), max(n1, n2)
-# prime_number 구하는 프로그래밍에서 추가적으로 보완해야 할 부분
+# def squares(n):
+#     return n * n
+even_numbers = [i for i in range(101) if i % 2 == 0]
+print(even_numbers)
+# print(tuple(map(squares, even_numbers)))
+
+# print(tuple(map(lambda x: x**2, even_numbers)))
+Z = lambda x : x**2
+print(tuple(map(Z, even_numbers)))
