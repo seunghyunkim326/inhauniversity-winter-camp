@@ -11,8 +11,8 @@ class Pokemon:
         print("공격!!")
     def get_name(self):
         return self.name
-    def set_name(self, new_name):
-        self.name = new_name
+    def set_name(self, name):
+        self.name = name
 class Charizard(Pokemon, FlyingMixin):
     pass
 class Gyarados(Pokemon, SwimmingMixin):
