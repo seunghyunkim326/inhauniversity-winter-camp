@@ -1,8 +1,7 @@
-# 10.15 1)
-# 내용 없는 Thing 클래스 만들어 출력, example 객체 생성하여 출력, 이후 둘 비교
-class Thing:
-    pass
-print(Thing)
-example = Thing
-print(example)
-# 둘의 결과값이 같다.
+# 10.15 2)
+# Thing2 클래스 생성 이 클래스 letters 속성에 값 'abc' 할당 후 letters 출력
+class Thing2:
+    def __init__(self, letter):
+        self.letters = letter
+A = Thing2('abc')
+print(A.letters)
